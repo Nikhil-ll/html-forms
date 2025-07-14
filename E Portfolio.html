@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhil's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      padding: 15px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+    .main {
+      margin-top: 90px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px 40px;
+    }
+    .left-section {
+      max-width: 45%;
+    }
+    .left-section h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .left-section h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .left-section p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .left-section button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .right-section img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .about-section, .skills-section, .contact-section {
+      padding: 50px 80px;
+      background-color: white;
+    }
+    .about-section h2, .skills-section h2, .contact-section h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 20px;
+    }
+    .about-section p, .skills-section p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .skills-category {
+      margin-bottom: 20px;
+    }
+    .skills-category h3 {
+      color: #007BFF;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .contact-section a {
+      display: block;
+      font-size: 16px;
+      color: #007BFF;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+        text-align: center;
+      }
+      .left-section, .right-section {
+        max-width: 90%;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar .nav-links {
+        margin-top: 10px;
+      }
+      .about-section, .skills-section, .contact-section {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Nikhil</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">Download CV</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="main" id="home">
+    <div class="left-section">
+      <h1>My name is Nikhil</h1>
+      <h2>B.Tech Student</h2>
+      <p>I'm passionate about technology and building smart digital solutions that make life easier.</p>
+      <button>Connect with Me</button>
+    </div>
+    <div class="right-section">
+      <img src="your-photo.jpg" alt="Nikhil's Photo">
+    </div>
+  </div>
+
+  <div class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>My name is Nikhil Yadav. I'm from Jaipur and currently pursuing B.Tech in Computer Science with specialization in Artificial Intelligence from Anand International College of Engineering.</p>
+    <p>Before college, I completed my schooling at Army Public School and completed high school from Defence Public School.</p>
+    <p>I am a tech enthusiast who loves exploring new technologies, learning to code, and creating digital solutions that make life simpler and more efficient.</p>
+  </div>
+
+  <div class="skills-section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-category">
+      <h3>Technical Skills</h3>
+      <p>Basic knowledge of Python learned in Class 11 and 12.</p>
+      <p>Foundation in SQL developed during senior secondary education.</p>
+    </div>
+    <div class="skills-category">
+      <h3>Creative Skills</h3>
+      <p>Video editing, presentation design, and content creation.</p>
+      <p>Capable of using software like Canva and Filmora for professional projects.</p>
+    </div>
+  </div>
+
+  <div class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:nikhil11181173@gmail.com">Email: nikhil11181173@gmail.com</a>
+    <a href="https://github.com/Nikhil-II" target="_blank">GitHub: Nikhil-II</a>
+    <a href="https://instagram.com/nikhil_3.14_" target="blank">Instagram: nikhil_3.14</a>
+  </div>
+</body>
+</html>
